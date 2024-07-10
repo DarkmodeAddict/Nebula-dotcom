@@ -9,3 +9,9 @@ Inner-Thoughts-dotcom
 - Removed Assets
 - Checked App.jsx for operation
 - Made Logs.md
+
+### Version 0.2
+- Created Appwrite Project
+- Loaded Appwrite Database Collection and Bucket
+- Properties added to .env
+- Configurations done in config.js
