@@ -15,3 +15,7 @@ Inner-Thoughts-dotcom
 - Loaded Appwrite Database Collection and Bucket
 - Properties added to .env
 - Configurations done in config.js
+
+### Version 0.3
+- Built Authentication Services (create login get logout)
+- Services assigned in auth.js
