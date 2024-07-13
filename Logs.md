@@ -19,3 +19,7 @@ Inner-Thoughts-dotcom
 ### Version 0.3
 - Built Authentication Services (create login get logout)
 - Services assigned in auth.js
+
+### Version 0.4
+- Built Configuration Services (create update delete for post and file)
+- Services assigned in conf.js
