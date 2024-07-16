@@ -1,4 +1,4 @@
-Inner-Thoughts-dotcom
+## Inner-Thoughts-dotcom Development Logs
 
 ### Version 0.0
 - Set up Vite for the project
@@ -37,3 +37,7 @@ Inner-Thoughts-dotcom
 - Tailwind CSS setup and tests (working)
 - Did Provider wrap in main.jsx
 - Small correction done in ./src/appwrite/auth.js
+
+### Version 0.6
+- Created React components (Logo.jsx Input.jsx Button.jsx)
+- Updated Footer and Header with index.js
