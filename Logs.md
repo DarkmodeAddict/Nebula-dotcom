@@ -41,3 +41,9 @@
 ### Version 0.6
 - Created React components (Logo.jsx Input.jsx Button.jsx)
 - Updated Footer and Header with index.js
+
+### Version 0.7
+- Created custom Select and Card components (Select.jsx  Postcard.jsx)
+- Created custom Sign Up and Sign In components (Signup.jsx  Login.jsx)
+- Set the authentication layout (Authlayout.jsx)
+- Added components for ./src/components/index.js
