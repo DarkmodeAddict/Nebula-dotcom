@@ -47,3 +47,8 @@
 - Created custom Sign Up and Sign In components (Signup.jsx  Login.jsx)
 - Set the authentication layout (Authlayout.jsx)
 - Added components for ./src/components/index.js
+
+### Version 0.8
+- Created the Real-Time Text Editor platform component (Realtimeeditor.jsx)
+- Created the Postform component (Postform.jsx)
+- Operated on Slugs and their transformations
