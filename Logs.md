@@ -52,3 +52,7 @@
 - Created the Real-Time Text Editor platform component (Realtimeeditor.jsx)
 - Created the Postform component (Postform.jsx)
 - Operated on Slugs and their transformations
+
+### Version 0.9
+- Created pages for Home, Posts and Authentication ./src/pages
+- Minor code changes
