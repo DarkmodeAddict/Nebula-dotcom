@@ -40,10 +40,10 @@ function Signup() {
       <p className="mt-2 text-center text-base text-black/60">
         Already have an account?&nbsp;
         <Link
-          to="/signup"
+          to="/login"
           className="font-medium text-primary transition-all duration-200 hover:underline"
         >
-          Sign Up
+          Log In
         </Link>
       </p>
       {error && <p className='text-red-600 mt-8 text-center'> {error} </p>}

@@ -8,11 +8,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Authlayout, Login } from './components/index.js'
 
 import Home from './pages/Home.jsx'
-import Addpost from './pages/Addpost';
-import Signup from './pages/Signup'
-import Editpost from './pages/Editpost';
-import Post from './pages/Post';
-import Allposts from './pages/Allposts';
+import Addpost from './pages/Addpost.jsx';
+import Signup from './pages/Signup.jsx'
+import Editpost from './pages/Editpost.jsx';
+import Post from './pages/Post.jsx';
+import Allposts from './pages/Allposts.jsx';
 
 const router = createBrowserRouter([
   {

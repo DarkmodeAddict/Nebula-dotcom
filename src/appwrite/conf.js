@@ -13,18 +13,18 @@ export class Service {
         this.bucket = new Storage(this.client)
     }
 
-    async createPost({title, slug, content, featuredImage, status, userID}) {
+    async createPost({Title, slug, Content, FeaturedImage, Status, UserID}) {
         try {
             return await this.databases.createDocument(
                 config.appwriteDatabaseID,
                 config.appwriteCollectionID,
                 slug,
                 {
-                    title,
-                    content,
-                    featuredImage,
-                    status,
-                    userID
+                    Title,
+                    Content,
+                    FeaturedImage,
+                    Status,
+                    UserID
                 }
             )
         }
@@ -33,17 +33,17 @@ export class Service {
         }
     }
 
-    async updatePost(slug, {title, content, featuredImage, status}) {
+    async updatePost(slug, {Title, Content, FeaturedImage, Status}) {
         try {
             return await this.databases.updateDocument(
                 config.appwriteDatabaseID,
                 config.appwriteCollectionID,
                 slug,
                 {
-                    title,
-                    content,
-                    featuredImage,
-                    status
+                    Title,
+                    Content,
+                    FeaturedImage,
+                    Status
                 }
             )
         }
@@ -81,7 +81,7 @@ export class Service {
         }
     }
 
-    async getPosts(queries = [Query.equal('status', 'active')]) {
+    async getPosts(queries = [Query.equal('Status', 'active')]) {
         try {
             return await this.databases.listDocuments(
                 config.appwriteDatabaseID,
@@ -107,11 +107,11 @@ export class Service {
         }
     }
 
-    async deleteFile(fileID) {
+    async deleteFile(fileId) {
         try {
             await this.bucket.deleteFile(
                 config.appwriteBucketID,
-                fileID
+                fileId
             )
             return true
         }
@@ -121,10 +121,10 @@ export class Service {
         }
     }
 
-    getFilePreview(fileID) {
+    getFilePreview(fileId) {
         return this.bucket.getFilePreview(
             config.appwriteBucketID,
-            fileID
+            fileId
         )
     }
 }

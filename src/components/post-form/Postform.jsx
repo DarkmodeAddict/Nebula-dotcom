@@ -1,32 +1,32 @@
 import React, { useCallback } from 'react'
 import { useForm } from 'react-hook-form'
-import { Button, Input, Select, Realtimeeditor } from '../index'
-import { useDispatch, useSelector } from 'react-redux'
+import { Button, Input, Select, Realtimeeditor } from '..'
+import { useSelector } from 'react-redux'
 import service from '../../appwrite/conf'
 import { useNavigate } from 'react-router-dom'
 
 function Postform({ post }) {
   const { register, handleSubmit, watch, setValue, control, getValues } = useForm({
     defaultValues: {
-      title: post?.title || '',
-      slug: post?.slug || '',
-      content: post?.content || '',
-      status: post?.status || 'active'
+      Title: post?.Title || '',
+      slug: post?.$id || '',
+      Content: post?.Content || '',
+      Status: post?.Status || 'active'
     }
   })
 
   const navigate = useNavigate()
-  const userData = useSelector(state => state.user.userData)
+  const userData = useSelector(state => state.auth.userData)
 
   const submit = async (data) => {
     if (post) {
-      const file = data.image[0] ? service.uploadFile(data.image[0]) : null
+      const file = await data.image[0] ? service.uploadFile(data.image[0]) : null
       if (file) {
-        service.deleteFile(post.featuredImage)
+        service.deleteFile(post.FeaturedImage)
       }
       const dbPost = await service.updatePost(post.$id, {
         ...data,
-        featuredImage: file ? file.$id : undefined
+        FeaturedImage: file ? file.$id : undefined
       })
       if (dbPost) {
         navigate(`/post/${dbPost.$id}`)
@@ -35,11 +35,11 @@ function Postform({ post }) {
     else {
       const file = await service.uploadFile(data.image[0])
       if (file) {
-        const fileID = file.$id
-        data.featuredImage = fileID
+        const fileId = file.$id
+        data.FeaturedImage = fileId
         const dbPost = await service.createPost({
           ...data,
-          userID: userData.$id
+          UserID: userData.$id
         })
         if (dbPost) {
           navigate(`/post/${dbPost.$id}`)
@@ -61,8 +61,8 @@ function Postform({ post }) {
 
   React.useEffect(() => {
     const subscription = watch((value, { name }) => {
-      if (name === 'title') {
-        setValue('slug', slugTransform(value.title, { shouldValidate: true }))
+      if (name === 'Title') {
+        setValue('slug', slugTransform(value.Title, { shouldValidate: true }))
       }
     })
     return () => {
@@ -77,7 +77,7 @@ function Postform({ post }) {
           label='Title :'
           placeholder='Title'
           className='mb-4'
-          {...register('title', { required: true })}
+          {...register('Title', { required: true })}
         />
         <Input
           label='Slug :'
@@ -88,7 +88,7 @@ function Postform({ post }) {
             setValue('slug', slugTransform(e.currentTarget.value), { shouldValidate: true });
           }}
         />
-        <Realtimeeditor label='Content :' name='content' control={control} defaultValue={getValues('content')} />
+        <Realtimeeditor label='Content :' name='Content' control={control} defaultValue={getValues('Content')} />
       </div>
       <div className='w-1/3 px-2'>
         <Input
@@ -101,8 +101,8 @@ function Postform({ post }) {
         {post && (
           <div className='w-full mb-4'>
             <img
-              src={service.getFilePreview(post.featuredImage)}
-              alt={post.title}
+              src={service.getFilePreview(post.FeaturedImage)}
+              alt={post.Title}
               className='rounded-lg'
             />
           </div>
@@ -111,7 +111,7 @@ function Postform({ post }) {
           options={['active', 'inactive']}
           label='Status'
           className='mb-4'
-          {...register('status', { required: true })}
+          {...register('Status', { required: true })}
         />
         <Button type='submit' bgColor={post ? 'bg-green-500' : undefined} className='w-full'>
           {post ? 'Update' : 'Submit'}

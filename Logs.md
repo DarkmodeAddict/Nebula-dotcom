@@ -1,4 +1,4 @@
-## Inner-Thoughts-dotcom Development Logs
+## Nebula-dotcom Development Logs
 
 ### Version 0.0
 - Set up Vite for the project
@@ -56,3 +56,21 @@
 ### Version 0.9
 - Created pages for Home, Posts and Authentication ./src/pages
 - Minor code changes
+
+### Version 0.10
+- Bug Fixes for the following <-------->
+- Routes pages not import for ./src/main.jsx (fixed)
+- Outlet not rendered for ./src/App.jsx (fixed)
+- ID.Unique function call not done ./src/appwrite/auth.js (fixed)
+- Status Title Content UserID and FeaturedImage variables cases were mismatched ./src/appwrite/conf.js (fixed) ---- !!Big Issue!!
+- Logout button functionality not done ./src/components/header/LogoutButton.jsx (fixed)
+- Variable rendered name fixed in ./src/components/post-form/Postform.jsx (fixed)
+- Id not called in ./src/components/Input.jsx
+- Wrong path of service call ./src/components/Postcard.jsx
+- Real Time Editor needed API Key from website ./src/components/Realtimeeditor.jsx (fixed)
+- Signup routing mistake at ./src/components/Signup.jsx (fixed)
+- Postcard item not spread with issues at ./src/pages/Allposts.jsx (fixed)
+- authSlice not called at ./src/store/store.jsx (fixed)
+- Variable name selection for ./src/pages/Post.jsx (fixed)
+- Fixes for UI and other things <--------->
+- For issue on Sign-up and Log-in pixel flow (to fix)
