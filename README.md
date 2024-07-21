@@ -13,7 +13,7 @@ Inner-Thoughts-dotcom is a beautiful and user friendly blog website platform. Ma
 ![JavaScript](https://img.shields.io/badge/appwrite-000?style=for-the-badge&logo=appwrite)
 ### Modules and Services
 ![JavaScript](https://img.shields.io/badge/node.js-000?style=for-the-badge&logo=node.js)
-![JavaScript](https://img.shields.io/badge/npm-000?style=for-the-badge&logo=npm)
+![JavaScript](https://img.shields.io/badge/npm-000?style=for-the-badge&logo=npm&logoColor=FF0000)
 ### Version Control
 ![JavaScript](https://img.shields.io/badge/git-000?style=for-the-badge&logo=git)
 ![JavaScript](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github)

@@ -74,3 +74,12 @@
 - Variable name selection for ./src/pages/Post.jsx (fixed)
 - Fixes for UI and other things <--------->
 - For issue on Sign-up and Log-in pixel flow (to fix)
+
+### Version 0.11
+
+- Lots of changes and fixes in UI
+- Deep changes in the design and responsiveness for mobile layouts
+- Components design changes
+- Changes in ./src/components and ./src/pages and ./src/App.jsx
+- Layout change in index.html
+- New logo in ./src/assets and /public

@@ -35,7 +35,7 @@ export default function Post() {
   return post ? (
     <div className='py-8'>
       <Container>
-        <div className='w-full flex justify-center mb-4 relative border rounded-xl p-2'>
+        <div className='w-full flex justify-center mb-4 relative rounded-xl p-2'>
           <img
             src={service.getFilePreview(post.FeaturedImage)}
             alt={post.Title}
@@ -45,20 +45,20 @@ export default function Post() {
           {isAuthor && (
             <div className='absolute right-6 top-6'>
               <Link to={`/edit-post/${post.$id}`}>
-                <Button bgColor='bg-green-500' className='mr-3'>
+                <Button bgColor='bg-green-600 hover:bg-green-800' className='mr-3'>
                   Edit
                 </Button>
               </Link>
-              <Button bgColor='bg-red-500' onClick={deletePost}>
+              <Button bgColor='bg-red-600 hover:bg-red-800' onClick={deletePost}>
                 Delete
               </Button>
             </div>
           )}
         </div>
         <div className='w-full mb-6'>
-          <h1 className='text-2xl font-bold'>{post.Title}</h1>
+          <h1 className='my-8 text-2xl sm:text-4xl text-center font-bold'>{post.Title}</h1>
         </div>
-        <div className='browser-css'>
+        <div className='text-center text-lg browser-css'>
           {parse(post.Content)}
         </div>
       </Container>

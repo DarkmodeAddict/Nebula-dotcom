@@ -14,6 +14,8 @@ function Realtimeeditor({ name, control, label, defaultValue = '' }) {
             apiKey='pp45dgq2ieumkotnag8okwxh1p248v9xwmywkbqnfwxyqzom'
             initialValue={defaultValue}
             init={{
+              selector: 'textarea',
+              theme: 'silver',
               initialValue: defaultValue,
               height: 500,
               menubar: true,
@@ -40,7 +42,9 @@ function Realtimeeditor({ name, control, label, defaultValue = '' }) {
                 'anchor',
               ],
               toolbar: 'undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |removeformat | help',
-              content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+              content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+              skin: 'oxide-dark',
+              content_css: 'dark'
             }}
             onEditorChange={onChange}
           />
