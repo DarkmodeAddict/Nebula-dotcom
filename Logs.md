@@ -83,3 +83,8 @@
 - Changes in ./src/components and ./src/pages and ./src/App.jsx
 - Layout change in index.html
 - New logo in ./src/assets and /public
+
+### Version 1.0 (DEPLOYMENT)
+- Deployed on vercel
+- Link here [here](https://nebula-4u6aycyc8-anurag-bhattacharjees-projects.vercel.app/) or [here](https://nebula-coral-phi.vercel.app/)
+- Readme Final Form
