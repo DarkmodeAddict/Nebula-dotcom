@@ -88,3 +88,12 @@
 - Deployed on vercel
 - Link here [here](https://nebula-4u6aycyc8-anurag-bhattacharjees-projects.vercel.app/) or [here](https://nebula-coral-phi.vercel.app/)
 - Readme Final Form
+
+### Version 1.1
+- Changes in Home Page when logged out.
+- Slight changes in fonts and styles.
+- Changes in header.
+- Footer fully changed (link not given right now).
+- Changes to font styles in Header, Posts Title and Content and Display.
+- Caution Text on AddPost so that the render bug feature is handled by users.
+- BETA TAG has been uplifted.

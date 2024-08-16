@@ -56,9 +56,9 @@ export default function Post() {
           )}
         </div>
         <div className='w-full mb-6'>
-          <h1 className='my-8 text-2xl sm:text-4xl text-center font-bold'>{post.Title}</h1>
+          <h1 className='my-8 text-2xl font-serif sm:text-6xl text-center font-bold'>{post.Title}</h1>
         </div>
-        <div className='text-center text-lg browser-css'>
+        <div className='text-center text-lg sm:text-xl browser-css font-serif'>
           {parse(post.Content)}
         </div>
       </Container>

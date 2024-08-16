@@ -9,7 +9,7 @@ function Postcard({ $id, Title, FeaturedImage }) {
         <div className='w-full justify-center mb-4'>
           <img src={service.getFilePreview(FeaturedImage)} alt={Title} className='rounded-xl' />
         </div>
-        <h2 className='text-sm sm:text-xl font-bold'> {Title} </h2>
+        <h2 className='text-sm font-serif sm:text-xl font-bold'> {Title} </h2>
       </div>
     </Link>
   )

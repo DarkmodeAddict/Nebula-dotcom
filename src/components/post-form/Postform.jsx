@@ -72,6 +72,7 @@ function Postform({ post }) {
 
   return (
     <div className='bg-gray-900 p-10'>
+      <p className='mb-10 text-red-500 text-xl'> If your Submit option doesn't work, please refresh the page and redirect to Home Page and try again. It is advised to save the writings someplace safe due to loss of content. If it still doesn't work, contact Developer. </p>
       <form onSubmit={handleSubmit(submit)} className='sm:flex sm:flex-wrap'>
         <div className='sm:w-2/3 sm:px-10'>
           <Input
@@ -89,7 +90,7 @@ function Postform({ post }) {
               setValue('slug', slugTransform(e.currentTarget.value), { shouldValidate: true });
             }}
           />
-          <Realtimeeditor label='Content :' name='Content' control={control} defaultValue={getValues('Content')} />
+          <Realtimeeditor label='Content: [ Dont use any colors/styles because those featured are paid (I am broke :) ]' name='Content' control={control} defaultValue={getValues('Content')} />
         </div>
         <div className='mt-5 sm:w-1/3 sm:px-2'>
           <Input
