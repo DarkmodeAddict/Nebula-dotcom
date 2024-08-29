@@ -97,3 +97,8 @@
 - Changes to font styles in Header, Posts Title and Content and Display.
 - Caution Text on AddPost so that the render bug feature is handled by users.
 - BETA TAG has been uplifted.
+
+### Version 1.2
+- Changes in icons and appearences.
+- Changes in flexibility of UI.
+- Changes in Navbar and Footer.

@@ -86,7 +86,7 @@ function Footer() {
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                    to="/"
+                    to="https://www.github.com/DarkmodeAddict"
                   >
                     Github
                   </Link>
@@ -94,7 +94,7 @@ function Footer() {
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-blue-400 hover:text-blue-700"
-                    to="/"
+                    to="https://www.linkedin.com/in/anurag-bhattacharjee-65a487275/"
                   >
                     LinkedIn
                   </Link>
@@ -102,7 +102,7 @@ function Footer() {
                 <li>
                   <Link
                     className=" text-base font-medium text-purple-400 hover:text-purple-700"
-                    to="/"
+                    to="/https://www.instagram.com/_.hamsen._/"
                   >
                     Instagram
                   </Link>
