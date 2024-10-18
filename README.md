@@ -12,7 +12,7 @@ Nebula-dotcom is a blog website. You can create your account and read other peop
 
 You can visit Nebula-dotcom on these two links: [Link 1](https://nebula-4u6aycyc8-anurag-bhattacharjees-projects.vercel.app/) | [Link 2](https://nebula-coral-phi.vercel.app/)
 
-Or if you want to load it in your system you can do the following commands: <p style='color: red'> (Temporarily Disabled) </p>
+Or if you want to load it in your system you can do the following commands: <p style='color: blue'> (Temporarily Disabled) </p>
 
 - Step 1: ```git clone https://github.com/AnuOdinson117/Nebula-dotcom.git```
 - Step 2: ```cd Nebula-dotcom```
